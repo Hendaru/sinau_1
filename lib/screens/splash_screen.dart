@@ -10,13 +10,13 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
 
-    // Future.delayed(const Duration(seconds: 3)).then((value) {
-    //   Navigator.of(context).pushAndRemoveUntil(
-    //       MaterialPageRoute(
-    //         builder: (context) => HomeScreen(),
-    //       ),
-    //       (route) => false);
-    // });
+    Future.delayed(const Duration(seconds: 3)).then((value) {
+      Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(
+            builder: (context) => HomeScreen(),
+          ),
+          (route) => false);
+    });
 
     return Scaffold(
       body: Stack(children: [
